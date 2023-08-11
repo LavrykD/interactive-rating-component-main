@@ -68,7 +68,12 @@ button {
     border: none;
 }
 
-.submit-form {
+.clicked {
+    background-color: hsl(var(--clr-neutral-hsl-200), .8);
+    color: var(--clr-neutral-100);
+}
+
+.form {
     max-width: 24rem;
     margin: 1.25rem;
     padding: 1.5rem;
@@ -79,7 +84,7 @@ button {
 }
 
 @media (min-width: 500px) {
-    .submit-form {
+    .form {
         padding: 2rem;
     }
 }
@@ -88,13 +93,13 @@ button {
     transform: scale(1.1);
 }
 
-.submit-header {
+.header {
     color: var(--clr-neutral-100);
     font-weight: var(--fw-700);
     font-size: var(--fs-400);
 }
 
-.submit-text {
+.text {
     line-height: 1.5;
 }
 
@@ -132,7 +137,19 @@ button {
     cursor: pointer;
 }
 
+.disabled {
+    display: none;
+}
+
 .clicked {
     background-color: hsl(var(--clr-neutral-hsl-200), .8);
     color: var(--clr-neutral-100);
+}
+
+.result-form {
+    text-align: center;
+}
+
+.top-image {
+    margin-inline: auto;
 }
