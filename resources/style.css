@@ -148,8 +148,18 @@ button {
 
 .result-form {
     text-align: center;
+    background: linear-gradient(hsl(var(--clr-neutral-hsl-400), .8), hsl(var(--clr-neutral-hsl-400), .5));
 }
 
 .top-image {
     margin-inline: auto;
+}
+
+.result {
+    background-color: hsl(var(--clr-neutral-hsl-300), .2);
+    width: fit-content;
+    justify-self: center;
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    color: var(--clr-primary);
 }
